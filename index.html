@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#3b82f6" />
+    <meta
+      name="description"
+      content="KatKat is an agentic video editor you talk to. Join the waitlist for early access."
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap"
+    />
+    <title>KatKat — Join the waitlist</title>
+    <script>
+      // Apply theme immediately to prevent flash of wrong theme
+      (function () {
+        try {
+          var stored = JSON.parse(localStorage.getItem("katkat-theme") || "{}");
+          var mode = (stored && stored.state && stored.state.mode) || "dark";
+          if (mode === "light") {
+            document.documentElement.classList.remove("dark");
+          } else {
+            document.documentElement.classList.add("dark");
+          }
+        } catch (e) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/waitlist-Dlq9X2aw.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/waitlist-HqfdTBnf.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

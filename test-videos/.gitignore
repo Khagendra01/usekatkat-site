@@ -1,0 +1,8 @@
+# Generated ffmpeg test samples — never committed (defense-in-depth;
+# the root .gitignore already ignores *.mp4 globally).
+*.mp4
+manifest.json
+c3_fixture_manifest.json
+c3_ffprobe.json
+e2e_fixture_manifest.json
+e2e_fixture_ffprobe.json

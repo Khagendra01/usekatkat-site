@@ -1,0 +1,26 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>clear storage</title></head>
+<body style="font-family:monospace;padding:2em">
+<h2>Clearing localStorage + IndexedDB for localhost:3000 …</h2>
+<pre id="log"></pre>
+<script>
+const log = (s) => { document.getElementById("log").textContent += s + "\n"; };
+(async () => {
+  try { localStorage.clear(); sessionStorage.clear(); log("localStorage + sessionStorage cleared"); }
+  catch (e) { log("storage err: " + e); }
+  try {
+    const dbs = await indexedDB.databases();
+    for (const d of dbs) {
+      if (!d.name) continue;
+      await new Promise((res) => {
+        const req = indexedDB.deleteDatabase(d.name);
+        req.onsuccess = req.onerror = req.onblocked = () => res();
+      });
+      log("indexedDB deleted: " + d.name);
+    }
+    if (!dbs.length) log("no IndexedDB databases found");
+  } catch (e) { log("indexedDB err: " + e); }
+  log("DONE — safe to close this tab");
+})();
+</script>
+</body></html>

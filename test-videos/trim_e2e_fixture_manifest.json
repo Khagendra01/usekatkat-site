@@ -1,0 +1,303 @@
+{
+  "audio_landmarks": [
+    {
+      "channel": "L",
+      "freq_hz": 440,
+      "time_ms": 500,
+      "window_ms": 180
+    },
+    {
+      "channel": "R",
+      "freq_hz": 660,
+      "time_ms": 4500,
+      "window_ms": 180
+    },
+    {
+      "channel": "L",
+      "freq_hz": 880,
+      "time_ms": 8500,
+      "window_ms": 180
+    },
+    {
+      "channel": "R",
+      "freq_hz": 1320,
+      "time_ms": 12500,
+      "window_ms": 180
+    },
+    {
+      "channel": "L",
+      "freq_hz": 1760,
+      "time_ms": 16500,
+      "window_ms": 180
+    }
+  ],
+  "ffmpeg_version": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+  "ffprobe": {
+    "audio": {
+      "channel_layout": "stereo",
+      "channels": 2,
+      "codec_name": "aac",
+      "sample_rate": "48000"
+    },
+    "format": {
+      "bit_rate": "131631",
+      "duration": "20.000000",
+      "filename": "/code/pratikpic/opencut/openreel-video/apps/web/public/test-videos/trim-e2e-20s-640x360-30fps.mp4",
+      "format_long_name": "QuickTime / MOV",
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "nb_programs": 0,
+      "nb_streams": 2,
+      "probe_score": 100,
+      "size": "329079",
+      "start_time": "0.000000",
+      "tags": {
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf60.16.100",
+        "major_brand": "isom",
+        "minor_version": "512"
+      }
+    },
+    "streams": [
+      {
+        "avg_frame_rate": "30/1",
+        "bit_rate": "113150",
+        "bits_per_raw_sample": "8",
+        "chroma_location": "left",
+        "closed_captions": 0,
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "codec_name": "h264",
+        "codec_tag": "0x31637661",
+        "codec_tag_string": "avc1",
+        "codec_type": "video",
+        "coded_height": 360,
+        "coded_width": 640,
+        "display_aspect_ratio": "16:9",
+        "disposition": {
+          "attached_pic": 0,
+          "captions": 0,
+          "clean_effects": 0,
+          "comment": 0,
+          "default": 1,
+          "dependent": 0,
+          "descriptions": 0,
+          "dub": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "karaoke": 0,
+          "lyrics": 0,
+          "metadata": 0,
+          "non_diegetic": 0,
+          "original": 0,
+          "still_image": 0,
+          "timed_thumbnails": 0,
+          "visual_impaired": 0
+        },
+        "duration": "20.000000",
+        "duration_ts": 307200,
+        "extradata_size": 47,
+        "field_order": "progressive",
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "height": 360,
+        "id": "0x1",
+        "index": 0,
+        "is_avc": "true",
+        "level": 30,
+        "nal_length_size": "4",
+        "nb_frames": "600",
+        "pix_fmt": "yuv420p",
+        "profile": "High",
+        "r_frame_rate": "30/1",
+        "refs": 1,
+        "sample_aspect_ratio": "1:1",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "tags": {
+          "encoder": "Lavc60.31.102 libx264",
+          "handler_name": "VideoHandler",
+          "language": "und",
+          "vendor_id": "[0][0][0][0]"
+        },
+        "time_base": "1/15360",
+        "width": 640
+      },
+      {
+        "avg_frame_rate": "0/0",
+        "bit_rate": "9104",
+        "bits_per_sample": 0,
+        "channel_layout": "stereo",
+        "channels": 2,
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "codec_name": "aac",
+        "codec_tag": "0x6134706d",
+        "codec_tag_string": "mp4a",
+        "codec_type": "audio",
+        "disposition": {
+          "attached_pic": 0,
+          "captions": 0,
+          "clean_effects": 0,
+          "comment": 0,
+          "default": 1,
+          "dependent": 0,
+          "descriptions": 0,
+          "dub": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "karaoke": 0,
+          "lyrics": 0,
+          "metadata": 0,
+          "non_diegetic": 0,
+          "original": 0,
+          "still_image": 0,
+          "timed_thumbnails": 0,
+          "visual_impaired": 0
+        },
+        "duration": "20.000000",
+        "duration_ts": 960000,
+        "extradata_size": 5,
+        "id": "0x2",
+        "index": 1,
+        "initial_padding": 0,
+        "nb_frames": "939",
+        "profile": "LC",
+        "r_frame_rate": "0/0",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "tags": {
+          "handler_name": "SoundHandler",
+          "language": "und",
+          "vendor_id": "[0][0][0][0]"
+        },
+        "time_base": "1/48000"
+      }
+    ],
+    "video": {
+      "codec_name": "h264",
+      "height": 360,
+      "nb_frames": "600",
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "30/1",
+      "width": 640
+    }
+  },
+  "fixture": {
+    "audio_codec": "aac",
+    "channels": 2,
+    "duration_ms": 20000,
+    "file": "openreel-video/apps/web/public/test-videos/trim-e2e-20s-640x360-30fps.mp4",
+    "fps": 30,
+    "frame_count": 600,
+    "height": 360,
+    "sample_rate_hz": 48000,
+    "sha256": "27419f14879c0f1ca8156f054dc57a2ae177c3f5c50d0e16df75d278eacdbda8",
+    "size_bytes": 329079,
+    "video_codec": "h264",
+    "width": 640
+  },
+  "frame_checksums": {
+    "0": "sha256:6dbb9b99b83607f84c46e3aad21a193d30c0c7d659d722a87bccd800f3525ea1",
+    "120": "sha256:7dab17c5ebba8168c90abf84b044920b7ad8733be5829496bc7f7e1479657dca",
+    "240": "sha256:e9030a9c62d9f600f8ede1eb7422624561371fd14de3599c1cc117fbd4bf6468",
+    "360": "sha256:0509f11f613da2fd93ecf205d5bf6f44a9f1b7cb1431fbc20a310aa0ce98a078",
+    "480": "sha256:930014463afb939e1a4f1d2ff773513126839b955aa99b2a26753fe5e62a8561",
+    "599": "sha256:249387d38891b9cbe82801305a58f8abc5db1ad06971d9db6d1e187754538d22"
+  },
+  "generated_at": "1970-01-01T00:00:00Z",
+  "generator": "tests/contract/fixtures/media_upload/gen_trim_e2e_fixture.py",
+  "manifest_version": 1,
+  "segments": [
+    {
+      "color": "#E53935",
+      "features": [
+        "solid_red",
+        "white_square",
+        "grid_80px"
+      ],
+      "label": "OPEN",
+      "time_ms": 0
+    },
+    {
+      "color": "#2E7D32",
+      "features": [
+        "solid_green",
+        "yellow_rect",
+        "checker_40px"
+      ],
+      "label": "CUT",
+      "time_ms": 4000
+    },
+    {
+      "color": "#1E88E5",
+      "features": [
+        "gradient_xy",
+        "moving_vertical_marker"
+      ],
+      "label": null,
+      "time_ms": 8000
+    },
+    {
+      "color": "#000000",
+      "features": [
+        "radial_target"
+      ],
+      "label": "TRIM",
+      "time_ms": 12000
+    },
+    {
+      "color": "#C2185B",
+      "features": [
+        "solid_magenta",
+        "diagonal_gradient",
+        "moving_marker"
+      ],
+      "label": "END",
+      "time_ms": 16000
+    }
+  ],
+  "visual_landmarks": {
+    "0": {
+      "description": "red + OPEN + centered white square",
+      "frame": 0,
+      "roi": null,
+      "sha256": "6dbb9b99b83607f84c46e3aad21a193d30c0c7d659d722a87bccd800f3525ea1",
+      "time_ms": 0
+    },
+    "120": {
+      "description": "green + CUT + checker (boundary)",
+      "frame": 120,
+      "roi": null,
+      "sha256": "7dab17c5ebba8168c90abf84b044920b7ad8733be5829496bc7f7e1479657dca",
+      "time_ms": 4000
+    },
+    "240": {
+      "description": "blue xy-gradient + vertical marker",
+      "frame": 240,
+      "roi": null,
+      "sha256": "e9030a9c62d9f600f8ede1eb7422624561371fd14de3599c1cc117fbd4bf6468",
+      "time_ms": 8000
+    },
+    "360": {
+      "description": "black + TRIM + radial target",
+      "frame": 360,
+      "roi": null,
+      "sha256": "0509f11f613da2fd93ecf205d5bf6f44a9f1b7cb1431fbc20a310aa0ce98a078",
+      "time_ms": 12000
+    },
+    "480": {
+      "description": "magenta + END + diagonal gradient",
+      "frame": 480,
+      "roi": null,
+      "sha256": "930014463afb939e1a4f1d2ff773513126839b955aa99b2a26753fe5e62a8561",
+      "time_ms": 16000
+    },
+    "599": {
+      "description": "final frame (magenta/END tail)",
+      "frame": 599,
+      "roi": null,
+      "sha256": "249387d38891b9cbe82801305a58f8abc5db1ad06971d9db6d1e187754538d22",
+      "time_ms": 19967
+    }
+  }
+}
